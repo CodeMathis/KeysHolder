@@ -186,4 +186,4 @@ while state_loop == "on":
         print("\nYou need to answer with a number between 1 and 8")
 
 
-#© 2022 Metmeza and Universivil, all rights given.
+#© 2022 Metmeza and Universivil, Creative Commons Zero v1.0 Universal.
