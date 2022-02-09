@@ -15,9 +15,11 @@ INTRODUCTION
 ------------
 
 The creation of KeysHolder wasn't made to make money but simply for fun. 
-The program can be used to hold some keys or/and mouse click. 
-In addition you can spam the keys at the speedrate you want and save the keys for your next usage of the program.
-A guide if you have problems with the keyboard modules for the .py file is accessible in the program and in this file.
+A guide if you have problems with the keyboard modules is accessible in the program and in this file.
+The creation of KeysHolder wasn't made to make money but simply for fun. The program can be used to hold some
+keys or/and mouse click. In addition you can spam the keys at the speedrate you want and save the keys for your
+next usage of the program. A guide if you have problems with the keyboard modules for the .py file is accessible in
+the program and in this file.
 
  * For a full description of the module, visit the module page:
    -https://pypi.org/project/keyboard
@@ -27,13 +29,15 @@ A guide if you have problems with the keyboard modules for the .py file is acces
 
 
 
-REQUIREMENTS
+REQUIREMENTS (not for the .exe)
 ------------
 
 The program requires the following modules in python (not the .exe) :
 
  * [View](https://pypi.org/project/keyboard)
- *  to install it : pip install keyboard
+ * [Installation](pip install keyboard)
+ * [View](https://pypi.org/project/mouse)
+ * [Installation](pip install mouse)
 
 The program requires the following update of python:
  * https://www.python.org/downloads/release/python-3910/
