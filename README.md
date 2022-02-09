@@ -42,7 +42,7 @@ The program requires the following update of python:
 
 ------------
 
-This program requires no modules outside of keyboard.
+This program requires no modules outside of keyboard and mouse.
 
 
 
