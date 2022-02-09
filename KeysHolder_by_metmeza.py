@@ -1,7 +1,5 @@
 #setup
-import os
 import time
-import ast
 
 try:
     import keyboard
@@ -39,10 +37,16 @@ possible_keys = ['\t', '\n', '\r', ' ', '!', '"', '#',
 possible_click = ['left click','middle click','right click']
 real_click = ['left','middle','right']
 
+def print_keys_list(keys_list):
+    print("Currently using the keys ",end=": ")
+    for key in range(len(keys_list)):
+        print("'",keys_list[key],"'",end=" ; ")
+    print("\n")
+
+
+
 #main loop
 while state_loop == "on":
-    #setup
-    valid_key_name = False
     
     #displayed text
     print("\n---------- Keys Holder by metmeza ----------\n\n",
@@ -70,9 +74,10 @@ while state_loop == "on":
             for every_key in range(number_of_keys):
                 valid_key_name = False
                 while valid_key_name == False:
-                    keys_name=input("What is the "+str(every_key+1)+" key you want to be hold : ")
+                    keys_name = input("What is the "+str(every_key+1)+" key you want to be hold : ")
                     if keys_name in keys_list:
-                        print("\nPLEASE, do not put the same input twice.\n")
+                        print("\nPLEASE, do not put the same input twice.")
+                        print_keys_list(keys_list)
                     elif keys_name in possible_keys and keys_name not in keys_list: # add good inputs to the main list
                         valid_key_name = True
                         keys_list.append(keys_name)
@@ -80,7 +85,7 @@ while state_loop == "on":
                         valid_key_name = True
                         keys_list.append(keys_name)
                     else:
-                        print("\nWrong name, all the possible input name are :\n",possible_keys,"\nAnd for the click :\n",possible_click,"\n")
+                        print("\nWrong name, all the possible keyboard input name are :\n",possible_keys,"\nAnd for the mouse :\n",possible_click)
             print("\nKeys added successfully")
         elif type(number_of_keys) != int or number_of_keys > 10 :
             print("\nPlease use numbers that are under 10 for the good of your device")
@@ -92,19 +97,19 @@ while state_loop == "on":
                 print("When ready, press",stop_and_start_key,"to start")
                 keyboard.wait(stop_and_start_key) #wait until the key is pressed
                 print("When finished, press",stop_and_start_key,"to stop")
-                time.sleep(0.5) #Wait a in case of missclick
+                time.sleep(0.5) #Wait in case of missclick
                 while keyboard.is_pressed(stop_and_start_key) == False: #Hold all the keys until 'stop_and_start_key' is pressed again
                     time.sleep(0.1)
                     for keys in keys_list :
                         if keys in possible_keys:
                             keyboard.press(keys)
                         elif keys in possible_click:
-                            mouse.press(button=real_click[possible_click.index(keys_name)])
+                            mouse.press(button=real_click[possible_click.index(keys)])
                 for keys in keys_list : #release all the keys
                     if keys in possible_keys:
                         keyboard.release(keys)
                     elif keys in possible_click:
-                        mouse.release(button=real_click[possible_click.index(keys_name)])
+                        mouse.release(button=real_click[possible_click.index(keys)])
             else:
                 print("Wrong name, all the possible input name are :\n",possible_keys,"\n")
         else:
@@ -115,23 +120,23 @@ while state_loop == "on":
             stop_and_start_key = input("Which keys you want to use to activate/desactivate spamming "+str(keys_list)+" ?\nAnswer : ")
             if stop_and_start_key in possible_keys:
                 try:
-                    speed_of_the_spam = float(input("At what speed you want to spam ? (max 0.01)\nAnswer : "))
+                    speed_of_the_spam = float(input("At what speed you want to spam ? (max 0.01 = 92 cps)\nAnswer : "))
                 except:
                     speed_of_the_spam = 0
                 if speed_of_the_spam >= 0.01 and speed_of_the_spam <= 100 :
                     print("When ready, press",stop_and_start_key,"to start")
                     keyboard.wait(stop_and_start_key) #wait until the key is pressed
                     print("When finished, press",stop_and_start_key,"to stop (if the speed is too fast you need to spam)")
-                    time.sleep(0.5) #Wait a in case of missclick
+                    time.sleep(0.5) #Wait in case of missclick
                     while keyboard.is_pressed(stop_and_start_key) == False: #Hold all the keys until 'stop_and_start_key' is pressed again
                         time.sleep(speed_of_the_spam)
                         for keys in keys_list :
                             if keys in possible_keys:
                                 keyboard.press_and_release(keys)
                             elif keys in possible_click:
-                                mouse.click(button=real_click[possible_click.index(keys_name)])
+                                mouse.click(button=real_click[possible_click.index(keys)])
                 else:
-                    print("\nPlease use numbers that are between 0 and 100 for the good of your device")
+                    print("\nPlease use numbers that are between 0.01 and 100 for the good of your device")
             else:
                 print("\nWrong name, all the possible input name are :\n",possible_keys,"\n")
         else:
@@ -147,16 +152,13 @@ while state_loop == "on":
 
     elif user_input == 5 :
         if keys_list == []:
-            print("No keys have been added")
+            print("\nNo keys have been added")
         else:
-            print("Currently using the keys ",end=": ")
-            for key in range(len(keys_list)):
-                print("'",keys_list[key],"'",end=" ; ")
-            print("")
+            print_keys_list(keys_list)
 
     elif user_input == 6 :
         try:
-            user_choice_to_erase = int(input("Do you want to erase : \n1 - Current keys \n2 - Saved keys \nAnswer : "))
+            user_choice_to_erase = int(input("\nDo you want to erase : \n 1- Current keys \n 2- Saved keys \n 3- Both \nAnswer : "))
         except:
             user_choice_to_erase = 69
         if user_choice_to_erase == 1 :
@@ -166,31 +168,27 @@ while state_loop == "on":
             with open('data.txt', 'w') as f:
                 pass
             print("\nSaved keys erased successfully")
+        elif user_choice_to_erase == 3 :
+            keys_list = []
+            with open('data.txt', 'w') as f:
+                pass
+            print("\nSaved and Current keys erased successfully")
         else:
-            print("\nPlease use the numbers 1 or 2")
+            print("\nPlease use the numbers 1 or 3")
 
     elif user_input == 7 :
         try:
-            what_help = int(input("\nWhat information do you need ?\n1 - What keys can be used?\n2 - Why does this not work without the .exe?\nAnswer : "))
+            what_help = int(input("\nWhat information do you need ?\n 1 - What keys can be used?\n 2 - Why doesn't this work using the .py file?\nAnswer : "))
         except:
             what_help = 69
         if what_help == 1 :
-            print("\n-All the possible input names for the keys are :\n",possible_keys,"\n-And all the possible click are :\n",possible_click)
+            print("\n-All the possible input names for the keys are :\n",possible_keys,"\nAnd for the mouse :\n",possible_click)
         elif what_help == 2 :
             print("\n-Requirement : PLEASE download the keyboard and mouse modules if you don't already have it",
-                  "!\nTo download it you need to type in a cmd : 'pip install keyboard' and 'pip install mouse'.",
-                  "\n-Note : 1)This module may not work in python updates above or under 3.9.10 that i'm using.\n2)If",
-                  "you can't download keyboard module it may be because you haven't pip installed.\n3)The",
-                  "'os', 'time' and 'ast' modules are normally pre-installed in python.")
-            help_user_answer = ""
-            #check if the user answer correctly
-            while help_user_answer == "" or help_user_answer != "y" and help_user_answer != "n" :
-                help_user_answer = input("Do you want me to install the module for you ? (answer : y/n)\n")
-                if help_user_answer == "y":
-                    os.system("pip install keyboard")
-                    os.system("pip install mouse")
-                elif help_user_answer != "n" and help_user_answer != "y":
-                    print("\nWrong input.")
+                  "!\nTo download it you need to type in a cmd : 'pip install keyboard' and/or 'pip install mouse'.",
+                  "\n-Note : 1)This modules may not work in python updates above or under 3.9.10 that i'm using.\n2)If",
+                  "you can't download this modules it may be because you haven't pip installed.\n3)The",
+                  "'time' and 'ast' modules are normally pre-installed in python.")
         else:
             print("\nPLEASE use numbers between 1 and 2.")
     
