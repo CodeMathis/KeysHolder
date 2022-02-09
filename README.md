@@ -49,7 +49,7 @@ This program requires no modules outside of keyboard and mouse.
 CONFIGURATION
 -------------
 
-The module has no gui or modifiable settings. There is no configuration to make with the program. 
+The modules has no gui or modifiable settings. There is no configuration to make with the program .exe. 
 If you want, you can only download the zip file and extract after.
 When enabled, just use your keyboard to select what you want.
 
