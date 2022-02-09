@@ -33,7 +33,7 @@ REQUIREMENTS
 The program requires the following modules in python (not the .exe) :
 
  * [View](https://pypi.org/project/keyboard)
- * [Installation](pip install keyboard)
+ *  to install it : pip install keyboard
 
 The program requires the following update of python:
  * https://www.python.org/downloads/release/python-3910/
