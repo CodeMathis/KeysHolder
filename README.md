@@ -14,9 +14,10 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-The creation of KeysHolder wasn't made to make money but simply for fun. 
+I wanted to afk on a game but wasn't able to find a good software to hold multiple keys and clicks at the same time,
+so i created it only for fun. 
 The program can be used to hold some keys or/and mouse click. In addition you can spam the keys at the speedrate you want and save the keys for your
-next usage of the program. A guide if you have problems with the keyboard or mouse modules for the .py file is accessible in
+next usage of the program. A guide if you have problems with the keyboard or mouse modules if you don't want to use the .exe file is accessible in
 the program and in this file.
 
  * For a full description of the module, visit the module page:
@@ -49,7 +50,7 @@ This program requires no modules outside of keyboard and mouse.
 CONFIGURATION
 -------------
 
-The modules has no gui or modifiable settings. There is no configuration to make with the program .exe. 
+The modules has no gui or additional modifiable settings. There is no configuration to make with the program .exe. 
 If you want, you can only download the zip file and extract after.
 When enabled, just use your keyboard to select what you want.
 
