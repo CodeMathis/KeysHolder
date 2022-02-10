@@ -78,4 +78,4 @@ Current programmers:
 COPYRIGHTS
 -----------
 
- * © 2022 Metmeza and Universivil, Creative Commons Zero v1.0 Universal.
+ * © 2022 Metmeza and Universivil, CC-BY-4.0 license.
