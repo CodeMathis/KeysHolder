@@ -17,7 +17,7 @@ INTRODUCTION
 I wanted to afk on a game but wasn't able to find a good software to hold multiple keys and clicks at the same time,
 so i created it only for fun. 
 The program can be used to hold some keys or/and mouse click. In addition you can spam the keys at the speedrate you want and save the keys for your
-next usage of the program. A guide if you have problems with the keyboard or mouse modules if you don't want to use the .exe file is accessible in
+next usage of the program. A guide if you have problems with the keyboard or mouse modules ( if you don't want to use the .exe file ) is accessible in
 the program and in this file.
 
  * For a full description of the module, visit the module page:
