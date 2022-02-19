@@ -184,10 +184,10 @@ while state_loop == "on":
         if what_help == 1 :
             print("\n-All the possible input names for the keys are :\n",possible_keys,"\nAnd for the mouse :\n",possible_click)
         elif what_help == 2 :
-            print("\n-Requirement : PLEASE download the keyboard and mouse modules if you don't already have it",
+            print("\n-Requirement : PLEASE download the keyboard and mouse modules if you are using the .py file ",
                   "!\nTo download it you need to type in a cmd : 'pip install keyboard' and/or 'pip install mouse'.",
-                  "\n-Note : 1)This modules may not work in python updates above or under 3.9.10 that i'm using.\n2)If",
-                  "you can't download this modules it may be because you haven't pip installed.\n3)The",
+                  "\n-Note : 1) This modules may not work in python updates above or under 3.9.10 that i'm using.\n2) If",
+                  "you can't download this modules it may be because you haven't pip installed.\n3) The",
                   "'time' and 'ast' modules are normally pre-installed in python.")
         else:
             print("\nPLEASE use numbers between 1 and 2.")
