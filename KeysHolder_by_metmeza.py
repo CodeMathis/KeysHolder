@@ -9,7 +9,7 @@ except ModuleNotFoundError:
           "in your version of python, if so, type 7 for help.")   
           
 state_loop = "on"
-keys_list = []
+
 try:
     with open('data.txt') as f:
         keys_list_from_file = f.readlines()
