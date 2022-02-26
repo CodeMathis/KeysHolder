@@ -34,7 +34,7 @@ REQUIREMENTS (not for the .exe)
 
 The program requires the following modules in python:
 
- * [View](https://pypi.org/project/keyboard)
+ * (https://pypi.org/project/keyboard)
  * [Installation](pip install keyboard)
  * [View](https://pypi.org/project/mouse)
  * [Installation](pip install mouse)
