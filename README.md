@@ -34,8 +34,8 @@ REQUIREMENTS (not for the .exe)
 
 The program requires the following modules in python:
 
- * https://pypi.org/project/keyboard
- * https://pypi.org/project/mouse
+ * https://pypi.org/project/keyboard/#files
+ * https://pypi.org/project/mouse/#files
 
 The program requires the following update of python:
  * https://www.python.org/downloads/release/python-3910/
