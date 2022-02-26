@@ -11,7 +11,6 @@ CONTENTS OF THIS FILE
 
 
 
-
 INTRODUCTION
 ------------
 
@@ -27,7 +26,6 @@ the program and in this file.
 
  * To submit bug reports and feature suggestions, or track changes contact me on discord:
    -met meza#6393
-
 
 
 
@@ -48,14 +46,12 @@ This program requires no modules outside of keyboard and mouse.
 
 
 
-
 CONFIGURATION
 -------------
 
 The modules has no gui or additional modifiable settings. There is no configuration to make with the program .exe. 
 If you want, you can only download the zip file and extract after.
 When enabled, just use your keyboard to select what you want.
-
 
 
 
@@ -70,14 +66,12 @@ If an error appears:
 
 
 
-
 PROGRAMMERS
 -----------
 
 Current programmers:
  * Metmeza
  * Universivil
-
 
 
 
