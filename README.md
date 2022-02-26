@@ -70,9 +70,8 @@ PROGRAMMERS
 -----------
 
 Current programmers:
- * Metmeza
- * Universivil
-
+ * [Metmeza](https://github.com/metmeza)
+ * [Universivil](https://github.com/universivil)
 
 
 COPYRIGHTS
