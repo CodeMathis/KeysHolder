@@ -21,8 +21,8 @@ next usage of the program. A guide if you have problems with the keyboard or mou
 the program and in this file.
 
  * For a full description of the modules, visit the module page:
-   -https://pypi.org/project/keyboard
-   -https://pypi.org/project/mouse
+   * https://pypi.org/project/keyboard
+   * https://pypi.org/project/mouse
 
  * To submit bug reports and feature suggestions, or track changes contact me on discord:
    -met meza#6393
