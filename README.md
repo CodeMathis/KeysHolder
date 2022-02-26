@@ -58,7 +58,7 @@ When enabled, just use your keyboard to select what you want.
 TROUBLESHOOTING
 ---------------
 
- * If an error appears:
+If an error appears:
 
    - Use the 7 key to access the help menu.
 
