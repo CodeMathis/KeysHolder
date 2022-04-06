@@ -71,8 +71,8 @@ PROGRAMMERS
 -----------
 
 Current programmers:
- * [Metmeza](https://github.com/metmeza)
- * [Universivil](https://github.com/universivil)
+ * [metmeza (716798)](https://github.com/716798-et-716685)
+ * [Universivil (716685)](https://github.com/universivil)
 
 
 COPYRIGHTS
