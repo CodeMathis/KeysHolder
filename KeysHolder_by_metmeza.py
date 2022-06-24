@@ -32,7 +32,7 @@ possible_keys = ['\t', '\n', '\r', ' ', '!', '"', '#',
         'f9','f11','f13','f16','f14','f10','f12',
         'f15','help','home','page up','forward delete',
         'f4','end','f2','page down','f1','left',
-        'right','down', 'up',]
+        'right','down','up','enter','ctrl+v']
 
 possible_click = ['left click','middle click','right click']
 real_click = ['left','middle','right']
@@ -70,7 +70,7 @@ while state_loop == "on":
         except:
             number_of_keys = 69
             
-        if type(number_of_keys) == int and number_of_keys < 10 :
+        if type(number_of_keys) == int :
             for every_key in range(number_of_keys):
                 valid_key_name = False
                 while valid_key_name == False:
@@ -87,8 +87,8 @@ while state_loop == "on":
                     else:
                         print("\nWrong name, all the possible keyboard input name are :\n",possible_keys,"\nAnd for the mouse :\n",possible_click)
             print("\nKeys added successfully")
-        elif type(number_of_keys) != int or number_of_keys > 10 :
-            print("\nPlease use numbers that are under 10 for the good of your device")
+        elif type(number_of_keys) != int :
+            print("\nPlease use numbers")
 
     elif user_input == 2 :
         if keys_list != [] :
