@@ -1,4 +1,3 @@
-[Dossier Parcoursup N°716798 et 716685]
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -71,8 +70,8 @@ PROGRAMMERS
 -----------
 
 Current programmers:
- * [metmeza (716798)](https://github.com/met-meza)
- * [Universivil (716685)](https://github.com/universivil)
+ * [metmeza](https://github.com/met-meza)
+ * [Universivil](https://github.com/universivil)
 
 
 COPYRIGHTS
