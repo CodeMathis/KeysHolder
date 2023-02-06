@@ -1,3 +1,4 @@
+|Disclaimer : the KeysHolder_by_metmeza_interface.py file is a work in progress and you might have problems with it|
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -63,6 +64,8 @@ If an error appears:
    - Use the 7 key to access the help menu.
 
    - Check all the requirements
+   
+   - The program sometime has problems to stop, mostly for the KeysHolder_by_metmeza_interface.py, just press the key until it stops
 
 
 
